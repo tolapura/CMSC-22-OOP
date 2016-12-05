@@ -25,7 +25,6 @@ public class RuleThirtyThreaded {
     public void display() {
         firstLine();
         int portion = (size < THREAD_COUNT) ? size : THREAD_COUNT;
-        firstLine();
         RuleThirtyParts[] parts = new RuleThirtyParts[portion];
         int each = size / portion;
         int excess = size % portion;
